@@ -1,7 +1,24 @@
 @import "smart-grid.sass";
 @import "../libs/normalize.css";
 
+@font-face
+	font-family: "PT Sans"
+	src: url('../fonts/PT-Sans-regular.woff2 format(woff2)')
 
+
+
+*
+	box-sizing: border-box
+
+body
+	background-image: url('./img/noiseBG.png')
+
+
+@mixin font($family,$size,$weight,$color) 
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
 
 
 li 
