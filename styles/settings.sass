@@ -1,28 +1,30 @@
 @import "smart-grid.sass";
 @import "../libs/normalize.css";
 
+
 @font-face
-	font-family: "PT Sans"
-	src: url('../fonts/PT-Sans-regular.woff2 format(woff2)')
+	font-family: PT Sans
+	src: url("../fonts/PT-Sans-regular.woff2") format("woff2")
 
+@font-face
+	font-family: "Montserrat-Regular";
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2")
 
-
-*
-	box-sizing: border-box
+@font-face
+	font-family: "Montserrat-Bold";
+	src: url("../fonts/Montserrat-Bold.woff2") format("woff2")
 
 body
-	background-image: url('./img/noiseBG.png')
-
-
-@mixin font($family,$size,$weight,$color) 
-	font-family: $family;
-	font-size: $size;
-	font-weight: $weight;
-	color: $color;
-
+	background-image: url("../img/cork-wallet.png")
 
 li 
 	list-style: none;
 
 a 
 	text-decoration: none;
+
+font($size,$family,$weight,$color)
+	font-size: $size
+	font-family: $family
+	font-weight: $weight
+	color: $color
